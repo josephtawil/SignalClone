@@ -6,11 +6,20 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import LoginScreen from "./screens/LoginScreen";
 const Stack = createStackNavigator();
+const globalScreenOptions = {
+  headerStyle: { backgroundColor: "#2C6BED"},
+  headerTitleStyle: {color: "white"},
+  headerTintColor: "white"
+}
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Screen name='Login' component={LoginScreen}/>
+      <Stack.Navigator screenOptions={globalScreenOptions}>
+              <Stack.Screen options={{
+               title: "Login Here"
+              }} name='Login' component={LoginScreen}/>
+      </Stack.Navigator>
     </NavigationContainer>
 
   
