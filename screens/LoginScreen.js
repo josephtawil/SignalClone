@@ -1,10 +1,17 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import {Button, Input, Image} from 'react-native-elements';
+import {StatusBar} from "expo-status-bar"
 
 const LoginScreen = () => {
     return (
         <View>
-            <Text>I am Login Screen</Text>
+            <StatusBar style="light"/>
+            <Image source={{
+                uri: "",
+            }}
+            style={{width: 200, height:200}}
+            />            
         </View>
     )
 }
