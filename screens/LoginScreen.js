@@ -8,7 +8,7 @@ const LoginScreen = () => {
         <View>
             <StatusBar style="light"/>
             <Image source={{
-                uri: "",
+                uri: "https://blog.mozilla.org/internetcitizen/files/2018/08/signal-logo.png",
             }}
             style={{width: 200, height:200}}
             />            
